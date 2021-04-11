@@ -3,7 +3,7 @@
 TODO: 
 
 - badges - join chat, etc.
-- Cosmos Magicians Forum or equivalent
+- Cosmos Magicians Forum or equivalent and AllCoreDevs
 - Setup https://cips.cosmos.network
 - Setup auto PR merge bot for drafts from their authors
 - Setup validation bots
@@ -11,10 +11,13 @@ TODO:
   https://github.com/rust-lang/rfcs for inspiration
     - eg. "when you need to follow this process" and "sub-team
       specific guidelines"
+    - or possibly work more of the RFC readme into CIP-1 ?
 
 Cosmos Improvement Proposals (CIPs) describe standards for the Cosmos platform, including core protocol specifications, client APIs, and module and IBC standards.
 
-**Before you initiate a pull request**, please read the [CIP-1](https://cips.cosmos.network/CIPS/cip-1) process document. Ideas should be thoroughly discussed prior to opening a pull request, such as on the [Cosmos Magicians forums](TODO) or in a GitHub issue in this repository.
+**Before you initiate a pull request**, please read the [CIP-1](https://cips.cosmos.network/CIPS/cip-1) process document. Ideas should be thoroughly discussed prior to opening a pull request, 
+such as on the [Cosmos forums](https://forum.cosmos.network) , or in a [GitHub issue in this repository](https://github.com/cosmos/cips/issues). CIPs should begin by copying the 
+[cip-template](./cip-template.md).
 
 This repository tracks the ongoing status of CIPs. It contains:
 
@@ -24,9 +27,10 @@ TODO: these links ...
 - [Last Call](https://cips.cosmos.network/all#last-call) for proposals that may become final (see also [RSS feed](https://cips.cosmos.network/last-call.xml)).
 - [Accepted](https://cips.cosmos.network/all#accepted) proposals which are awaiting implementation or deployment by Cosmos client developers.
 - [Final](https://cips.cosmos.network/all#final) and [Active](https://cips.cosmos.network/all#active) proposals that are recorded.
-- The [CIP process](./CIPS/cip-1.md#cip-work-flow) that governs the CIP repository.
+- The [CIP process](./CIPS/cip-1.md#cip-workflow) that governs the CIP repository.
 
-Achieving "Final" status in this repository only represents that a proposal has been reviewed for technical accuracy. It is solely the responsibility of the reader to decide whether a proposal will be useful to them.
+Achieving "Final" status in this repository only represents that a proposal has been reviewed for technical accuracy. It does not imply approval for the proposal to be accepted by Cosmos.
+For that, turn to [Cosmos Governance](https://github.com/cosmos/governance). It is solely the responsibility of the reader to decide whether a proposal will be useful to them.
 
 Browse all current and draft CIPs on [the official CIP site](https://cips.cosmos.network/).
 
@@ -104,6 +108,6 @@ This repository began as a direct clone of the [Ethereum EIP repo](https://githu
 It also incorporates some components of the [Rust RFC
 process](https://github.com/rust-lang/rfcs).
 Special thanks to the incredible Ethereum and Rust core development communities and their
-organizers!
+organizers for inspiration!
 
 

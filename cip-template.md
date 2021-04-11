@@ -18,7 +18,7 @@ Note that an CIP number will be assigned by an editor. When opening a pull reque
 The title should be 44 characters or less.
 
 ## Simple Summary
-If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the CIP. Imagine an email subject line, GitHub PR title, or forum post title.
+"If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the CIP. Imagine an email subject line, GitHub PR title, or forum post title.
 
 ## Abstract
 A short (~200 word) description of the technical issue being addressed. This should be a very terse and human-readable version of the specification section. Someone should be able to read only the abstract to get the gist of what this specification does.
@@ -89,7 +89,7 @@ All CIPs must contain a section that discusses the security implications/conside
 
 ## Future Possibilities
 Think about what the natural extension and evolution of your proposal would be and how it would affect the network and project as a whole in a holistic way. 
-Try to use this section as a tool to more fully consider all possible interactions with the project and language in your proposal. 
+Try to use this section as a tool to more fully consider all possible interactions with the project and network in your proposal. 
 Also consider how this all fits into the roadmap for the project and of the relevant sub-team.
 
 This is also a good place to "dump ideas", if they are out of scope for the RFC you are writing but otherwise related.
@@ -97,7 +97,6 @@ This is also a good place to "dump ideas", if they are out of scope for the RFC 
 If you have tried and cannot think of any future possibilities, you may simply state that you cannot think of anything.
 
 Note that having something written down in the future-possibilities section is not a reason to accept the current or a future CIP; such notes should be in the section on motivation or rationale in this or subsequent CIPs. The section merely provides additional information.
-
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).

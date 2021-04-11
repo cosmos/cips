@@ -16,9 +16,8 @@
 title: Cosmos Improvement Proposals
 description: >-
   Cosmos Improvement Proposals (CIPs) describe standards for the Cosmos
-  platform, including core protocol specifications, client APIs, and contract
-  standards.
-url: "https://cips.cosmos.org"
+  platform, including core protocol specifications and client APIs.
+url: "https://cips.cosmos.network"
 twitter_username: cosmos
 github_username:  cosmos
 header_pages:
@@ -26,7 +25,6 @@ header_pages:
  - core.html
  - networking.html
  - interface.html
- - erc.html
  - meta.html
  - informational.html
 twitter:
