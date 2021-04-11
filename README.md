@@ -1,12 +1,16 @@
 # Cosmos Improvement Proposals (CIPs)
 
 TODO: 
-    - badges - join chat, etc.
-    - Cosmos Magicians Forum or equivalent
-    - Setup https://cips.cosmos.network
-    - Setup auto PR merge bot for drafts from their authors
-    - Setup validation bots
-    - 
+
+- badges - join chat, etc.
+- Cosmos Magicians Forum or equivalent
+- Setup https://cips.cosmos.network
+- Setup auto PR merge bot for drafts from their authors
+- Setup validation bots
+- Expand this README to be more an introduction to the process, see
+  https://github.com/rust-lang/rfcs for inspiration
+    - eg. "when you need to follow this process" and "sub-team
+      specific guidelines"
 
 Cosmos Improvement Proposals (CIPs) describe standards for the Cosmos platform, including core protocol specifications, client APIs, and module and IBC standards.
 
@@ -97,7 +101,9 @@ More information on Jekyll and GitHub pages [here](https://help.github.com/en/en
 ## Acknowledgements
 
 This repository began as a direct clone of the [Ethereum EIP repo](https://github.com/ethereum/eips).
-Special thanks to the incredible Ethereum core development community and its
+It also incorporates some components of the [Rust RFC
+process](https://github.com/rust-lang/rfcs).
+Special thanks to the incredible Ethereum and Rust core development communities and their
 organizers!
 
 
