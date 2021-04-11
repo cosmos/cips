@@ -24,10 +24,10 @@ If you can't explain it simply, you don't understand it well enough." Provide a 
 A short (~200 word) description of the technical issue being addressed. This should be a very terse and human-readable version of the specification section. Someone should be able to read only the abstract to get the gist of what this specification does.
 
 ## Motivation
-The motivation section should describe the "why" of this CIP. What problem does it solve? Why should someone want to implement this standard? What benefit does it provide to the Ethereum ecosystem? What use cases does this CIP address?
+The motivation section should describe the "why" of this CIP. What problem does it solve? Why should someone want to implement this standard? What benefit does it provide to the Cosmos ecosystem? What use cases does this CIP address?
 
 ## Specification
-The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Ethereum platforms (go-ethereum, parity, cpp-ethereum, ethereumj, ethereumjs, and [others](https://github.com/ethereum/wiki/wiki/Clients)).
+The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Cosmos platforms (go-cosmos, parity, cpp-cosmos, cosmosj, cosmosjs, and [others](https://github.com/cosmos/wiki/wiki/Clients)).
 
 ## Rationale
 The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is supported in other languages.

@@ -21,7 +21,7 @@ GEM
     concurrent-ruby (1.1.6)
     dnsruby (1.61.3)
       addressable (~> 2.5)
-    eip_validator (0.8.2)
+    cip_validator (0.8.2)
       activemodel
       front_matter_parser (~> 0.1.1)
     em-websocket (0.5.1)
@@ -261,7 +261,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  eip_validator (>= 0.8.2)
+  cip_validator (>= 0.8.2)
   github-pages (= 206)
   html-proofer (>= 3.3.1)
   jekyll-feed (~> 0.11)

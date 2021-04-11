@@ -30,8 +30,8 @@ matrix:
     - language: rust
       cache: cargo
       before_script:
-        - cargo install eipv --version=0.1.1
-      env: TASK='eip-validator'
+        - cargo install cipv --version=0.1.1
+      env: TASK='cip-validator'
     - python: 3.3
       env: TASK='codespell'
       before_script: "sudo pip install urllib3[secure] && sudo pip install codespell"

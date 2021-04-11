@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ethereum Improvement Proposals
+title: Cosmos Improvement Proposals
 description: >-
-  Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum
+  Cosmos Improvement Proposals (CIPs) describe standards for the Cosmos
   platform, including core protocol specifications, client APIs, and contract
   standards.
-url: "https://eips.ethereum.org"
-twitter_username: ethereum
-github_username:  ethereum
+url: "https://cips.cosmos.org"
+twitter_username: cosmos
+github_username:  cosmos
 header_pages:
  - all.html
  - core.html
@@ -31,7 +31,7 @@ header_pages:
  - informational.html
 twitter:
   card: summary
-  username: ethereum
+  username: cosmos
 
 # Build settings
 highlighter: rouge
@@ -39,7 +39,7 @@ markdown: kramdown
 theme: minima
 kramdown:
   parse_block_html: false
-  # This is the default, but be explicit as some EIPs depend on it
+  # This is the default, but be explicit as some CIPs depend on it
   auto_ids: true
   # This is to ensure more determistic behaviour
   auto_id_stripping: true
@@ -50,9 +50,9 @@ permalink: /:slug
 defaults:
   -
     scope:
-      path: "EIPS"
+      path: "CIPS"
     values:
-      layout: "eip"
+      layout: "cip"
 
 exclude:
   - .github
@@ -63,7 +63,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - eip-template.md
+  - cip-template.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
   - README.md
