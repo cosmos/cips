@@ -2,7 +2,7 @@
 
 TODO: 
 
-- badges - join chat, etc.
+- badges - join chat, etc. here and in the index.html
 - Cosmos Magicians Forum or equivalent and AllCoreDevs
 - Setup https://cips.cosmos.network
 - Setup auto PR merge bot for drafts from their authors
@@ -105,7 +105,7 @@ More information on Jekyll and GitHub pages [here](https://help.github.com/en/en
 ## Acknowledgements
 
 This repository began as a direct clone of the [Ethereum EIP repo](https://github.com/ethereum/eips).
-It also incorporates some components of the [Rust RFC
+It is also inspired by the [Rust RFC
 process](https://github.com/rust-lang/rfcs).
 Special thanks to the incredible Ethereum and Rust core development communities and their
 organizers for inspiration!
