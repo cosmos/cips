@@ -1,5 +1,7 @@
 # Cosmos Improvement Proposals (CIPs)
 
+** XXX: This is a WIP **
+
 TODO: 
 
 - badges - join chat, etc. here and in the index.html
