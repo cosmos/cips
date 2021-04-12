@@ -52,7 +52,7 @@ layout: default
   IEEE specification for reference formatting:
   https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf
   {% endcomment %}
-  <p>{% include authorlist.html authors=page.author %}, "CIP-{{ page.cip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Last Call" %} [DRAFT]{% endif %}," <em>Cosmos Improvement Proposals</em>, no. {{ page.cip | xml_escape }}, {{ page.created | date: "%B %Y" }}. [Online serial]. Available: https://cips.cosmos.org/CIPS/cip-{{ page.cip | xml_escape }}.</p>
+  <p>{% include authorlist.html authors=page.author %}, "CIP-{{ page.cip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Last Call" %} [DRAFT]{% endif %}," <em>Cosmos Improvement Proposals</em>, no. {{ page.cip | xml_escape }}, {{ page.created | date: "%B %Y" }}. [Online serial]. Available: https://cips.cosmos.network/CIPS/cip-{{ page.cip | xml_escape }}.</p>
 </div>
 {% comment %}
 Article schema specification:
