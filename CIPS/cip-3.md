@@ -3,7 +3,7 @@ cip: 3
 title: Minimum Commission Rate Param
 status: Draft
 type: Core
-author: Sunny Aggarwal (@sunnya97)
+author: Sunny Aggarwal <@sunnya97>
 created: 2021-05-02
 ---
 
