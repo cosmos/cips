@@ -10,7 +10,7 @@ Buried within the distribution module is something much more powerful, a generic
 
 Staking derivatives requires a few components to be established. 
 
-1. Staking derivatives reworking the mechanics of the staking module and distribution module to respond to possession of the appropriate denim for both withdrawing staked tokens and collecting rewards
+1. Staking derivatives reworking the mechanics of the staking module and distribution module to respond to possession of the appropriate denom for both withdrawing staked tokens and collecting rewards
 2. Some staking derivatives designs require reward behavior to be triggered at the epoch boundary. The distribution module should be adapted to integrate with epoch base staking.
 
 ### Interchain Staking Rewards
