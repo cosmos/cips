@@ -15,6 +15,7 @@ created: 2021-05-02
 In the cosmos-sdk's staking module, validators are allowed to set their commission rate, that gets charged on all rewards accrued to their delegations.  Currently, a validator can set this to any value between 0% and 100%.  
 
 It has been seen in practice that this often leads to validators undercutting each other to provide the lowest commission rate to attract delegators, creating a "race to 0" on commission rates.  This leads operating validators to be an unprofitable enterprise for many validators, which had a potentially negative impact on the security of the network.
+Cosmos hub governance in the past has overwhelmingly also indicated that it finds 0% commission rates harmful to the success of the network. See cosmos hub proposal 12 (https://www.mintscan.io/cosmos/proposals/12)
 
 ## Goals
 
