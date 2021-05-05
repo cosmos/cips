@@ -2,7 +2,7 @@
 cip: 5
 title: Module Readiness Committee
 author: Shahan Khatchadourian <@shahankhatch>
-status: Draft
+status: Living
 type: Meta
 created: 2021-05-05
 requires: [cip-4: Module Readiness Checklist](cip-4.md)

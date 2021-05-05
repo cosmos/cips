@@ -2,7 +2,7 @@
 cip: 4 
 title: Module Readiness Checklist 
 author: Shahan Khatchadourian <@shahankhatch>
-status: Draft 
+status: Living 
 type: Meta 
 created: 2021-05-05
 ---
