@@ -1,5 +1,6 @@
 ---
-cip: 4 title: Module Readiness Checklist 
+cip: 4 
+title: Module Readiness Checklist 
 author: Shahan Khatchadourian <@shahankhatch>
 status: Draft 
 type: Meta 
