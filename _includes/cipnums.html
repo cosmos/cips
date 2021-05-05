@@ -1,4 +1,0 @@
-{% assign cips=include.cips|split:"," %}
-{% for cipnum in cips %}
-  <a href="{{cipnum|strip|prepend:"cip-" }}">{{cipnum|strip}}</a>{% if forloop.last == false %}, {% endif %}
-{% endfor %}
