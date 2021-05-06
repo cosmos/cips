@@ -39,7 +39,7 @@ Integrations
 
 - [ ] Gaia integration
 - [ ] Integration partners:
-- [ ] IBC Readiness
+- [ ] IBC readiness
 - [ ] Downstream user impact report
 - [ ] Upstream partner impact report
 - [ ] Inter-module dependence, Ethereum Full node, any potential NFT module on the Hub
