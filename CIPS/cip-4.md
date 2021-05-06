@@ -24,7 +24,7 @@ Overview
 - [ ] ADR
 - [ ] Specification
 - [ ] Documentation
-- [ ] Light Paper
+- [ ] Light paper
 - [ ] Repository
 - [ ] Demo
 
