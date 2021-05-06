@@ -42,7 +42,7 @@ Integrations
 - [ ] IBC readiness
 - [ ] Downstream user impact report
 - [ ] Upstream partner impact report
-- [ ] Inter-module dependence, Ethereum Full node, any potential NFT module on the Hub
+- [ ] Inter-module dependence, Ethereum full node, any potential NFT module on the Hub
 
 Governance
 
