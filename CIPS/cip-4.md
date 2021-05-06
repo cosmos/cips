@@ -53,7 +53,7 @@ Governance
 
 Research
 
-- [ ] Working Group/Interest Group and Charter
+- [ ] Working group/interest group and charter
 - [ ] Questions
 - [ ] Formalisms
 - [ ] Experiments
