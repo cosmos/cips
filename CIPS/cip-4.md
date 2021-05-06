@@ -48,7 +48,7 @@ Governance
 
 - [ ] Hub governance proposal
 - [ ] Core community governance
-- [ ] Steering community
+- [ ] Steering committee
 - [ ] Timelines and Roadmap
 
 Research
