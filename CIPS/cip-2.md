@@ -5,7 +5,8 @@ During the original launch of the Cosmos SDK, the distribution module was  one o
 
 Buried within the distribution module is something much more powerful, a generic reward module that can enable Cosmos SDK application developers to enable yield farming, rewards for Interchain staking and more. The goal of this endeavor is to surface this potential.
 
-# Use Cases
+## Use Cases
+
 ### Staking Derivatives
 
 Staking derivatives requires a few components to be established. 
@@ -43,7 +44,6 @@ Integrate with staking epochs to enable epoch based behavior.
 1. Is it possible to build the distribution module in a way that it can be extended without forking/customization? The short term goal will be enable the distribution module to be customized and extended with custom pools rather than full programmable.
 
 2. Composability with Cosmwasm.  A subset of the features proposed for the distribution module have been implemented on Cosmwasm supporting blockchains in the last?
-
 
 
 
