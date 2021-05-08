@@ -13,7 +13,7 @@ It is intended to serve mainnet decision makers with relevant information for de
 
 The checklist is intended to be easy to complete by the Module Readiness Committee.
 
-Not all items on the checklist need to have items.
+Not all items on the checklist apply to every module, they should be removed based on context.
 
 # Module Readiness Checklist: `Module Name`
 
