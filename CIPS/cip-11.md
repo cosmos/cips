@@ -1,5 +1,5 @@
 ---
-cip: <to be assigned>
+cip: 11
 title: Cosmos HD key derivation
 author: Simon Warta (@webmaster128)
 discussions-to: <URL>
