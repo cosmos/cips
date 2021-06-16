@@ -27,6 +27,7 @@ but explicitly registers chains instead of coins.
 | 3           | [Starport Network](https://starport.network/)           |                      |
 | 4           | [Pylons](https://www.pylons.tech/)                      |                      |
 | 5           | [Cosmos Cash](https://github.com/allinbits/cosmos-cash) |                      |
+| 6           | [Regen Network](https://regen.network/)                 |                      |
 
 ## Copyright
 
