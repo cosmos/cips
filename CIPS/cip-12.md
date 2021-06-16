@@ -1,5 +1,5 @@
 ---
-cip: <to be assigned>
+cip: 12
 title: Chain registry for Cosmos HD key derivation
 author: Simon Warta (@webmaster128)
 discussions-to: <URL>
@@ -7,13 +7,13 @@ status: Draft
 type: <Standards Track, Meta, or Informational>
 category (only required for Standards Track): <Core, Networking, Interface, or ERC>
 created: 2021-06-16
-requires: X
+requires: 11
 ---
 
 ## Simple Summary
 
 This chain registry for Cosmos chains is used to avoid conflicts in the chain
-index value of CIP-X.
+index value of CIP-11.
 It is heavily inspired by [SLIP44](https://github.com/satoshilabs/slips/blob/ef6d7700cc/slip-0044.md)
 but explicitly registers chains instead of coins.
 
