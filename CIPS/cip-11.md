@@ -380,7 +380,7 @@ for this document. However, here are some starting points for future work:
 ## Test vectors
 
 The following test vectors have been [generated using CosmJS][cosmjs834] and were verified
-using a [Python implementation](./tests):
+using a [Python implementation](../assets/cip-11/generate_test_vectors.py):
 
 ### Simple HD path
 
