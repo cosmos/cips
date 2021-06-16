@@ -19,13 +19,14 @@ but explicitly registers chains instead of coins.
 
 ## Registry
 
-| Chain index | Network                                       | Notes                |
-| ----------- | --------------------------------------------- | -------------------- |
-| 0           | –                                             | For testing purposes |
-| 1           | Cosmos Hub                                    | Reserved but unused  |
-| 2           | [Tgrade](https://tgrade.finance/)             |                      |
-| 3           | [Starport Network](https://starport.network/) |                      |
-| 4           | [Pylons](https://www.pylons.tech/)            |                      |
+| Chain index | Network                                                 | Notes                |
+| ----------- | ------------------------------------------------------- | -------------------- |
+| 0           | –                                                       | For testing purposes |
+| 1           | Cosmos Hub                                              | Reserved but unused  |
+| 2           | [Tgrade](https://tgrade.finance/)                       |                      |
+| 3           | [Starport Network](https://starport.network/)           |                      |
+| 4           | [Pylons](https://www.pylons.tech/)                      |                      |
+| 5           | [Cosmos Cash](https://github.com/allinbits/cosmos-cash) |                      |
 
 ## Copyright
 
