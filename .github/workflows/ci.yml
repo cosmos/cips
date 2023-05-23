@@ -42,10 +42,10 @@ jobs:
 
     steps:
       - name: Checkout CIP Repository
-        uses: actions/checkout@47fbe2df0ad0e27efb67a70beac3555f192b062f
+        uses: actions/checkout@v3
 
       - name: Install Ruby
-        uses: ruby/setup-ruby@08245253a76fa4d1e459b7809579c62bd9eb718a
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6.0
           bundler-cache: true
@@ -67,10 +67,10 @@ jobs:
 
     steps:
       - name: Checkout CIP Repository
-        uses: actions/checkout@47fbe2df0ad0e27efb67a70beac3555f192b062f
+        uses: actions/checkout@v3
 
       - name: Link Checker
-        uses: gaurav-nelson/github-action-markdown-link-check@d53a906aa6b22b8979d33bc86170567e619495ec
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
           config-file: config/mlc_config.json
           use-quiet-mode: no
@@ -83,7 +83,7 @@ jobs:
 
     steps:
       - name: Checkout CIP Repository
-        uses: actions/checkout@47fbe2df0ad0e27efb67a70beac3555f192b062f
+        uses: actions/checkout@v3
 
       - name: Get Changed Files
         id: changed
@@ -96,7 +96,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run CodeSpell
-        uses: codespell-project/actions-codespell@57beb9f38f49d773d641ac555d1565c3b6a59938
+        uses: codespell-project/actions-codespell@v2
         if: steps.changed.outcome == 'success'
         with:
           check_filenames: true
@@ -108,7 +108,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout CIP Repository
-        uses: actions/checkout@47fbe2df0ad0e27efb67a70beac3555f192b062f
+        uses: actions/checkout@v3
 
       - name: Get Changed Files
         id: changed
@@ -121,7 +121,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Lint
-        uses: DavidAnson/markdownlint-cli2-action@f5cf187ef11bd3a68a127321b794aa252ff23019
+        uses: DavidAnson/markdownlint-cli2-action@v10
         if: steps.changed.outcome == 'success'
         with:
           command: config
