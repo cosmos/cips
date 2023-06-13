@@ -197,7 +197,7 @@ Each CIP should have the following parts:
 
 ### CIP Formatting
 
-CIPs should be written in [markdown] format. There is a [template](https://github.com/cosmos/CIPs/blob/master/cip-template.md) to follow.
+CIPs should be written in [markdown] format. There is a [template](https://github.com/cosmos/CIPs/blob/main/p-template.md) to follow.
 
 #### CIP Header Preamble
 
@@ -443,4 +443,3 @@ Copyright and related rights waived via [CC0](https://creativecommons.org/public
 [the Cosmos subreddit]: https://www.reddit.com/r/cosmosnetwork 
 [the Issues section of this repository]: https://github.com/cosmos/cips/issues
 [Cosmos Governance]: https://github.com/cosmos/governance
-
