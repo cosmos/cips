@@ -439,7 +439,7 @@ Copyright and related rights waived via [CC0](https://creativecommons.org/public
 [API/RPC]: https://v1.cosmos.network/rpc/v0.41.4
 
 [the Cosmos forum]: https://forum.cosmos.network
-[the Cosmos Discord]: https://discord.gg/vcExX9T
+[the Cosmos Discord]: https://discord.gg/cosmosnetwork
 [the Cosmos subreddit]: https://www.reddit.com/r/cosmosnetwork 
 [the Issues section of this repository]: https://github.com/cosmos/cips/issues
 [Cosmos Governance]: https://github.com/cosmos/governance
