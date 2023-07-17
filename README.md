@@ -43,28 +43,3 @@ The canonical URL for a CIP that has achieved draft status at any point is at <h
 Please consider anything which is not published on <https://cips.cosmos.network/> as a working paper.
 
 And please consider anything published at <https://cips.cosmos.network/> with a status of "draft" as an incomplete draft.
-
-## Validation
-
-TODO: create cip_validator ?
-
-CIPs must pass some validation tests.  The CIP repository ensures this by running tests using [html-proofer](https://rubygems.org/gems/html-proofer) and [cip_validator](https://rubygems.org/gems/cip_validator).
-
-It is possible to run the CIP validator locally:
-
-```sh
-gem install cip_validator
-cip_validator <INPUT_FILES>
-```
-
-## Automerger
-
-The CIP repository contains an "auto merge" feature to ease the workload for CIP editors.  If a change is made via a PR to a draft CIP, then the authors of the CIP can GitHub approve the change to have it auto-merged by the [cip-automerger](https://github.com/cip-automerger/automerger) bot.
-
-## Acknowledgements
-
-This repository began as a direct clone of the [Ethereum EIP repo](https://github.com/ethereum/eips).
-It is also inspired by the [Rust RFC
-process](https://github.com/rust-lang/rfcs).
-Special thanks to the incredible Ethereum and Rust core development communities and their
-organizers for inspiration!
