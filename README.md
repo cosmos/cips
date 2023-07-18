@@ -15,16 +15,6 @@ Cosmos Improvement Proposals (CIPs) describe standards for the Cosmos platform, 
 such as on the [Cosmos forums](https://forum.cosmos.network) , or in a [GitHub issue in this repository](https://github.com/cosmos/cips/issues). CIPs should begin by copying the
 [cip-template](./cip-template.md).
 
-<!-- 
-TODO
-This repository tracks the ongoing status of CIPs. It contains:
-
-- [Draft](https://cips.cosmos.network/all#draft) proposals which intend to complete the CIP review process.
-- [Last Call](https://cips.cosmos.network/all#last-call) for proposals that may become final (see also [RSS feed](https://cips.cosmos.network/last-call.xml)).
-- [Accepted](https://cips.cosmos.network/all#accepted) proposals which are awaiting implementation or deployment by Cosmos client developers.
-- [Final](https://cips.cosmos.network/all#final) and [Active](https://cips.cosmos.network/all#active) proposals that are recorded.
-- The [CIP process](./CIPS/cip-1.md#cip-workflow) that governs the CIP repository. -->
-
 Achieving "Final" status in this repository only represents that a proposal has been reviewed for technical accuracy. It does not imply approval for the proposal to be accepted by Cosmos.
 For that, turn to [Cosmos Governance](https://github.com/cosmos/governance). It is solely the responsibility of the reader to decide whether a proposal will be useful to them.
 
@@ -43,28 +33,3 @@ The canonical URL for a CIP that has achieved draft status at any point is at <h
 Please consider anything which is not published on <https://cips.cosmos.network/> as a working paper.
 
 And please consider anything published at <https://cips.cosmos.network/> with a status of "draft" as an incomplete draft.
-
-## Validation
-
-TODO: create cip_validator ?
-
-CIPs must pass some validation tests.  The CIP repository ensures this by running tests using [html-proofer](https://rubygems.org/gems/html-proofer) and [cip_validator](https://rubygems.org/gems/cip_validator).
-
-It is possible to run the CIP validator locally:
-
-```sh
-gem install cip_validator
-cip_validator <INPUT_FILES>
-```
-
-## Automerger
-
-The CIP repository contains an "auto merge" feature to ease the workload for CIP editors.  If a change is made via a PR to a draft CIP, then the authors of the CIP can GitHub approve the change to have it auto-merged by the [cip-automerger](https://github.com/cip-automerger/automerger) bot.
-
-## Acknowledgements
-
-This repository began as a direct clone of the [Ethereum EIP repo](https://github.com/ethereum/eips).
-It is also inspired by the [Rust RFC
-process](https://github.com/rust-lang/rfcs).
-Special thanks to the incredible Ethereum and Rust core development communities and their
-organizers for inspiration!
