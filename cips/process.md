@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Process - Purpose and Guidelines
+title: CIP Process - Purpose and Guidelines
 ---
 
 ## Simple Summary
