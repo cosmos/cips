@@ -33,7 +33,7 @@ As the Cosmos ecosystem is growing and maturing, it is becoming increasingly con
 
 #### Shepherding a CIP
 
-Parties involved in the process are you, the champion or *CIP author*, the [*CODEOWNERS*](../.github/CODEOWNERS), and the *[Cosmos Core Developers]*.
+Parties involved in the process are you, the champion or *CIP author*, the *CODEOWNERS*, and the *Cosmos Core Developers*.
 
 Before you begin writing a formal CIP, you should vet your idea. Ask the Cosmos community first if an idea is original to avoid wasting time on something that will be rejected based on prior research. It is thus recommended to open a discussion thread on [the Cosmos discussion board](https://github.com/orgs/cosmos/discussions/categories/product-feedback) to do this, but you can also use an [the Issues section of this repository].
 
@@ -93,7 +93,7 @@ number. The process continues as follows:
 
 Each CIP should have the following parts:
 
-- Preamble - RFC 822 style headers containing metadata about the CIP, including the CIP number, a short descriptive title (limited to a maximum of 44 characters), and the author details. See [below](./cip-1.md#cip-header-preamble) for details.
+- Preamble - RFC 822 style headers containing metadata about the CIP, including the CIP number, a short descriptive title (limited to a maximum of 44 characters), and the author details. See [below](#cip-header-preamble) for details.
 - Simple Summary - simplified and layman-accessible explanation of the CIP. Imagine an email subject line, GitHub PR title, or forum post title.
 - Abstract - A short (~200 word) description of the technical issue being addressed.
 - Motivation - A motivation section is critical for CIPs that want to change the Cosmos protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the CIP solves. CIP submissions without sufficient motivation may be rejected outright.

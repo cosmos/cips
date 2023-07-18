@@ -15,16 +15,6 @@ Cosmos Improvement Proposals (CIPs) describe standards for the Cosmos platform, 
 such as on the [Cosmos forums](https://forum.cosmos.network) , or in a [GitHub issue in this repository](https://github.com/cosmos/cips/issues). CIPs should begin by copying the
 [cip-template](./cip-template.md).
 
-<!-- 
-TODO
-This repository tracks the ongoing status of CIPs. It contains:
-
-- [Draft](https://cips.cosmos.network/all#draft) proposals which intend to complete the CIP review process.
-- [Last Call](https://cips.cosmos.network/all#last-call) for proposals that may become final (see also [RSS feed](https://cips.cosmos.network/last-call.xml)).
-- [Accepted](https://cips.cosmos.network/all#accepted) proposals which are awaiting implementation or deployment by Cosmos client developers.
-- [Final](https://cips.cosmos.network/all#final) and [Active](https://cips.cosmos.network/all#active) proposals that are recorded.
-- The [CIP process](./CIPS/cip-1.md#cip-workflow) that governs the CIP repository. -->
-
 Achieving "Final" status in this repository only represents that a proposal has been reviewed for technical accuracy. It does not imply approval for the proposal to be accepted by Cosmos.
 For that, turn to [Cosmos Governance](https://github.com/cosmos/governance). It is solely the responsibility of the reader to decide whether a proposal will be useful to them.
 
