@@ -84,6 +84,10 @@ const config = {
             title: "Documentation",
             items: [
               {
+                label: "Cosmos SDK",
+                href: "https://docs.cosmos.network",
+              },
+              {
                 label: "Cosmos Hub",
                 href: "https://hub.cosmos.network",
               },
