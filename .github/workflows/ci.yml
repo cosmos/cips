@@ -36,47 +36,6 @@ jobs:
           name: pr_number
           path: pr/
 
-  htmlproofer:
-    name: HTMLProofer
-    runs-on: ubuntu-20.04
-
-    steps:
-      - name: Checkout CIP Repository
-        uses: actions/checkout@v3
-
-      - name: Install Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.6.0
-          bundler-cache: true
-
-      - name: Build Website
-        run: |
-          bundle exec jekyll doctor
-          bundle exec jekyll build
-
-      - name: HTML Proofer
-        run: bundle exec htmlproofer ./_site --check-html --check-opengraph --report-missing-names --log-level=:debug --assume-extension --empty-alt-ignore --timeframe=6w --disable-external
-
-      - name: DNS Validator
-        run: bundle exec github-pages health-check
-
-  link-check:
-    name: Link Check
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout CIP Repository
-        uses: actions/checkout@v3
-
-      - name: Link Checker
-        uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
-          config-file: config/mlc_config.json
-          use-quiet-mode: no
-          use-verbose-mode: yes
-          check-modified-files-only: yes
-
   codespell:
     name: CodeSpell
     runs-on: ubuntu-latest
