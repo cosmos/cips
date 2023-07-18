@@ -61,6 +61,7 @@ jobs:
           check_filenames: true
           path: ${{ env.CHANGED_FILES }}
           skip: .git,Gemfile.lock,**/*.png,**/*.gif,**/*.jpg,**/*.svg,vendor,_site,_config.yml,style.css
+          ignore_words_file: .codespellignore
 
   markdownlint:
     name: Markdown Linter
