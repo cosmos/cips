@@ -11,7 +11,7 @@
 
 Cosmos Improvement Proposals (CIPs) describe standards for the Cosmos platform, including core protocol specifications, client APIs, and module and IBC standards.
 
-**Before you initiate a pull request**, please read the [CIP Process](./cips/process) process document. Ideas should be thoroughly discussed prior to opening a pull request,
+**Before you initiate a pull request**, please read the [CIP Process](./cips/process.md) document. Ideas should be thoroughly discussed prior to opening a pull request,
 such as on the [Cosmos Discussion Boards](https://github.com/orgs/cosmos/discussions/categories/cip) , or in a [GitHub issue in this repository](https://github.com/cosmos/cips/issues). CIPs should begin by copying the
 [cip-template](./cip-template.md).
 
