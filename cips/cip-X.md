@@ -28,11 +28,12 @@ format that is parameterized by scope, session details, and security mechanisms.
 ## Motivation
 
 Having the ability to sign messages off-chain has proven to be a fundamental aspect of nearly any blockchain.
-The notion of signing messages off-chain has many added benefits, such as saving on computational costs and reducing
-transaction throughput and overhead. Within the context of the Cosmos ecosystem, some of the major applications of signing such
-data include, but are not limited to, providing a cryptographically secure and verifiable means of proving validator
-identity and possibly associating it with some other framework or organization. Additionally, having the ability to
-sign Cosmos messages with a Ledger or similar HSM device.
+The notion of signing messages off-chain has many added benefits, such as smart accounts where off-chain signing allows 
+for application layer authorizations saving on computational costs and reducing  transaction throughput and overhead.
+Within the context of the Cosmos ecosystem, some of the major applications of signing such data include, but are not
+limited to, providing a cryptographically secure and verifiable means of proving validator  identity and possibly
+associating it with some other framework or organization. Additionally, having the ability to sign Cosmos messages
+with a Ledger or similar HSM device.
 
 ## Documentation
 
@@ -92,8 +93,9 @@ The first message added to the `offchain` package is `MsgSignArbitraryData`.
 `MsgSignArbitraryData` enables developers to sign arbitrary bytes that are valid only in an off-chain context. Here,
 `AppDomain` represents the application requesting off-chain message signing, while `signerAddress` is the account address of
 the  signer. `Data` consists of arbitrary bytes that can represent various forms of data, including text, files, or
-objects.  The decision on how to deserialize, serialize, and interpret `Data` is left to the application developers,
-depending on their specific use case.
+objects. The decision on how to deserialize, serialize, and interpret `Data` is left to the application developers,
+depending on their specific use case. It is important to note that some signers are not capable of signing
+arbitrary-length messages.
 
 Application developers have the discretion to determine how `Data` should be handled. This includes defining the
 serialization and deserialization processes and specifying the object that Data represents within their context.
@@ -147,11 +149,11 @@ Signed MsgSignArbitraryData json example:
 }
 ```
 
-### MsgSignIn
+### MsgProveIdentity
 
-The second message added to the `offchain` package is `MsgSignIn`.
+The second message added to the `offchain` package is `MsgProveIdentity`.
 
-`MsgSignIn` enables the proof of wallet ownership for applications sign-in. In this context, `AppDomain` is the
+`MsgProveIdentity` enables the proof of wallet ownership for applications sign-in. In this context, `AppDomain` is the
 application requesting off-chain message signing. `URI` refers to the resource that is the subject of the signing.
 `signerAddress` is the account address of the signer. `Nonce` is a random string typically chosen by the relying on party and
 used to prevent replay attacks. `Issued-at` the time when the message was generated.
@@ -159,8 +161,8 @@ used to prevent replay attacks. `Issued-at` the time when the message was genera
 Proto definition:
 
 ```protobuf
-// MsgSignIn defines an arbitrary, general-purpose, off-chain message
-message MsgSignIn {
+// MsgProveIdentity defines an arbitrary, general-purpose, off-chain message
+message MsgProveIdentity {
   option (cosmos.msg.v1.signer) = "signerAddress";
   // AppDomain is the application requesting off-chain message signing
   string appDomain = 1;
@@ -175,7 +177,7 @@ message MsgSignIn {
 }
 ```
 
-Signed MsgSignIn JSON example:
+Signed MsgProveIdentity JSON example:
 
 ```json
 {
@@ -183,7 +185,7 @@ Signed MsgSignIn JSON example:
   "value": {
     "msg": [
       {
-        "type": "offchain/MsgSignIn",
+        "type": "offchain/MsgProveIdentity",
         "value": {
           "appDomain": "exampleSwap",
           "uri": "https://exampleSwap.com/login",
@@ -214,7 +216,10 @@ Signed MsgSignIn JSON example:
 ## Drawbacks
 
 This CIP requires a fixed relationship between an account address and a public key. That means it won't work if [ADR-034](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-rc.1/docs/architecture/adr-034-account-rekeying.md) 
-is implemented.
+is implemented. This is because we cannot assume that `Address = Hash(PubKey)` anymore. This is not problematic for
+everything that needs to be verified on-chain, but it is for off-chain. If a signer has changed its public key, how can
+that be verified off-chain? Even if the message is enriched with a `chain-id` field, who is responsible for matching
+`chain-id` and the node's IP?
 
 Doesn't work with multisig accounts.
 
