@@ -10,7 +10,7 @@ created: 2023-10-10
 ## Simple Summary
 
 This is a convention for signing arbitrary messages. We propose this specification as a method for signing and
-validating off-chain arbitrary messages.
+verifying off-chain arbitrary messages.
 
 ## Abstract
 
@@ -66,7 +66,7 @@ offers a more user-friendly sign-in process, replacing non-human-readable random
 
 ## Specification
 
-Off-chain signed messages should resemble Cosmos SDK messages but **must not** constitute a valid on-chain transaction.
+Off-chain signed messages should resemble Cosmos SDK transactions but **must not** constitute a valid on-chain transaction.
 `chain-id`, `account_number`, and `sequence` must all be assigned invalid values.
 
 An off-chain transaction follows these rules:
@@ -80,7 +80,7 @@ An off-chain transaction follows these rules:
 Verification of an off-chain transaction follows the same rules as an on-chain one, except for the specification
 differences highlighted above.
 
-As messages in cosmos are defined as proto definitions, different messages can be defined for different off-chain
+As messages in Cosmos are defined as proto definitions, different messages can be defined for different off-chain
 use cases, such as Sign-In, proof of wallet ownership or the ability to sign arbitrary data.
 
 All off-chain messages will be of the type `offchain/messageKind`.
@@ -159,7 +159,7 @@ used to prevent replay attacks. `Issued-at` the time when the message was genera
 Proto definition:
 
 ```protobuf
-// MsgSignArbitraryData defines an arbitrary, general-purpose, off-chain message
+// MsgSignIn defines an arbitrary, general-purpose, off-chain message
 message MsgSignIn {
   option (cosmos.msg.v1.signer) = "signerAddress";
   // AppDomain is the application requesting off-chain message signing
@@ -175,7 +175,7 @@ message MsgSignIn {
 }
 ```
 
-Signed MsgSignIn json example:
+Signed MsgSignIn JSON example:
 
 ```json
 {
