@@ -92,7 +92,7 @@ The first message added to the `offchain` package is `MsgSignArbitraryData`.
 
 `MsgSignArbitraryData` enables developers to sign arbitrary bytes that are valid only in an off-chain context. Here,
 `AppDomain` represents the application requesting off-chain message signing, while `signerAddress` is the account address of
-the  signer. `Data` consists of arbitrary bytes that can represent various forms of data, including text, files, or
+the  signer. `Data` consists of a string with valid UTF-8 text that can represent various forms of data, including text, files, or
 objects. The decision on how to deserialize, serialize, and interpret `Data` is left to the application developers,
 depending on their specific use case. It is important to note that some signers are not capable of signing
 arbitrary-length messages.
@@ -111,7 +111,7 @@ message MsgSignArbitraryData {
   // Signer is the sdk.AccAddress of the message signer
   string signerAddress = 2 [(cosmos_proto.scalar) = "cosmos.AddressString"];
   // Data represents the raw bytes of the content that is signed (text, json, etc)
-  bytes data = 3 [(gogoproto.jsontag) = "data"];
+  string data = 3 [(gogoproto.jsontag) = "data"];
 }
 ```
 
@@ -221,7 +221,7 @@ everything that needs to be verified on-chain, but it is for off-chain. If a sig
 that be verified off-chain? Even if the message is enriched with a `chain-id` field, who is responsible for matching
 `chain-id` and the node's IP?
 
-Doesn't work with multisig accounts.
+It'd work with current multisigs as they are deterministic but on chain multisigs would not work here.
 
 ## Rationale
 
@@ -261,9 +261,6 @@ the other for sing-in.
 Backwards compatibility is guaranteed as this CIP introduces new messages but does not modify any prior work.
 
 ## Security Considerations
-
-It is important to notice that the `Data` field in `MsgSignArbitraryData` consists of bytes, which means it could be
-non-human-readable.
 
 There are no more security considerations as the messages will not be on-chain.
 
