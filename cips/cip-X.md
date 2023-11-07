@@ -258,7 +258,8 @@ the other for sing-in.
 
 ## Backwards Compatibility
 
-Backwards compatibility is guaranteed as this CIP introduces new messages but does not modify any prior work.
+Backwards compatibility is guaranteed as this CIP introduces new messages but does not modify any prior work. Although
+it won't be compatible with ADR-036 as it defines different messages.
 
 ## Security Considerations
 
