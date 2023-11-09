@@ -29,7 +29,7 @@ format that is parameterized by scope, session details, and security mechanisms.
 
 Having the ability to sign messages off-chain has proven to be a fundamental aspect of nearly any blockchain.
 The notion of signing messages off-chain has many added benefits, such as smart accounts where off-chain signing allows 
-for application layer authorizations saving on computational costs and reducing  transaction throughput and overhead.
+for application layer authorizations saving on computational costs and reducing transaction throughput and overhead.
 Within the context of the Cosmos ecosystem, some of the major applications of signing such data include, but are not
 limited to, providing a cryptographically secure and verifiable means of proving validator  identity and possibly
 associating it with some other framework or organization. Additionally, having the ability to sign Cosmos messages
