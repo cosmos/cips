@@ -263,6 +263,11 @@ it won't be compatible with ADR-036 as it defines different messages.
 
 ## Security Considerations
 
+It is important to notice that the `Data` field in `MsgSignArbitraryData` consists of a valid UTF-8 string, this does
+not that the string is printable or that the signing device would be capable of printing it. Examples of such valid
+strings are NULL, [BELL](https://en.wikipedia.org/wiki/Bell_character), emojis or unicode in the
+[Private Use Areas](https://en.wikipedia.org/wiki/Private_Use_Areas).
+
 There are no more security considerations as the messages will not be on-chain.
 
 ## Future Possibilities
